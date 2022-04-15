@@ -1,0 +1,174 @@
+{
+  "groups": [],
+  "environmentKey": "production",
+  "rollouts": [
+    {
+      "experiments": [
+        {
+          "status": "Running",
+          "audienceIds": [],
+          "variations": [
+            {
+              "variables": [],
+              "id": "17288870153",
+              "key": "17288870153",
+              "featureEnabled": true
+            }
+          ],
+          "id": "17285450819",
+          "key": "17285450819",
+          "layerId": "17277251526",
+          "trafficAllocation": [],
+          "forcedVariations": {}
+        }
+      ],
+      "id": "17277251526"
+    },
+    {
+      "experiments": [
+        {
+          "status": "Running",
+          "audienceIds": [],
+          "variations": [
+            {
+              "variables": [
+                { "id": "21020010189", "value": "3_content_pages" }
+              ],
+              "id": "20976850584",
+              "key": "20976850584",
+              "featureEnabled": true
+            }
+          ],
+          "id": "21010020261",
+          "key": "21010020261",
+          "layerId": "20998180488",
+          "trafficAllocation": [],
+          "forcedVariations": {}
+        }
+      ],
+      "id": "20998180488"
+    },
+    {
+      "experiments": [
+        {
+          "status": "Running",
+          "audienceIds": [],
+          "variations": [
+            {
+              "variables": [{ "id": "21005751076", "value": "test_value" }],
+              "id": "20996561515",
+              "key": "20996561515",
+              "featureEnabled": true
+            }
+          ],
+          "id": "21015731009",
+          "key": "21015731009",
+          "layerId": "21015810828",
+          "trafficAllocation": [],
+          "forcedVariations": {}
+        }
+      ],
+      "id": "21015810828"
+    }
+  ],
+  "typedAudiences": [],
+  "projectId": "17034004838",
+  "variables": [],
+  "featureFlags": [
+    {
+      "experimentIds": [],
+      "rolloutId": "17277251526",
+      "variables": [],
+      "id": "17256841931",
+      "key": "capital_nav"
+    },
+    {
+      "experimentIds": [],
+      "rolloutId": "21015810828",
+      "variables": [
+        {
+          "defaultValue": "test_value",
+          "type": "string",
+          "id": "21005751076",
+          "key": "test_key"
+        }
+      ],
+      "id": "20984500931",
+      "key": "test_feature"
+    },
+    {
+      "experimentIds": [],
+      "rolloutId": "20998180488",
+      "variables": [
+        {
+          "defaultValue": "3_content_pages",
+          "type": "string",
+          "id": "21020010189",
+          "key": "variation"
+        }
+      ],
+      "id": "21029200307",
+      "key": "usi_sign_in_prompt"
+    }
+  ],
+  "experiments": [],
+  "version": "4",
+  "audiences": [
+    {
+      "conditions": "[\"or\", {\"match\": \"exact\", \"name\": \"$opt_dummy_attribute\", \"type\": \"custom_attribute\", \"value\": \"$opt_dummy_value\"}]",
+      "id": "$opt_dummy_audience",
+      "name": "Optimizely-Generated Audience for Backwards Compatibility"
+    }
+  ],
+  "anonymizeIP": true,
+  "sdkKey": "EDx1xiwQ2fE4ixa8cQ5LCH",
+  "attributes": [
+    { "id": "20484275782", "key": "SIGNED_IN" },
+    { "id": "20489999133", "key": "Test" },
+    { "id": "20585844727", "key": "seen_prompt" },
+    { "id": "20588264367", "key": "signed_in" },
+    { "id": "21318550209", "key": "3_homepage_views" },
+    { "id": "21329532174", "key": "5_homepage_views" },
+    { "id": "21355960921", "key": "on_homepage" },
+    { "id": "21376500286", "key": "in_experiment" }
+  ],
+  "botFiltering": false,
+  "accountId": "4621041136",
+  "events": [
+    { "experimentIds": [], "id": "20508337859", "key": "page_view_signed_in" },
+    { "experimentIds": [], "id": "20508854441", "key": "prompt_dismiss_click" },
+    { "experimentIds": [], "id": "20520500372", "key": "prompt_viewed" },
+    {
+      "experimentIds": [],
+      "id": "20520700623",
+      "key": "test_mvt_bucket_reset_view"
+    },
+    { "experimentIds": [], "id": "20522465763", "key": "page_view_signed_out" },
+    { "experimentIds": [], "id": "20522922900", "key": "prompt_sign_in_click" },
+    {
+      "experimentIds": [],
+      "id": "20523569110",
+      "key": "prompt_register_click"
+    },
+    { "experimentIds": [], "id": "20528222767", "key": "page_view" },
+    {
+      "experimentIds": [],
+      "id": "20538020797",
+      "key": "test_mvt_bucket_reset_click"
+    },
+    { "experimentIds": [], "id": "20544360523", "key": "test_mvt_page_view" },
+    {
+      "experimentIds": [],
+      "id": "20566481879",
+      "key": "search_result_view_event"
+    },
+    {
+      "experimentIds": [],
+      "id": "20579810298",
+      "key": "search_result_click_event"
+    },
+    { "experimentIds": [], "id": "21264670749", "key": "test_mvt_click_event" },
+    { "experimentIds": [], "id": "21279930201", "key": "test_mvt_view_event" }
+  ],
+  "revision": "281"
+}
