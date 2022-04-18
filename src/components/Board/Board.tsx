@@ -1,13 +1,12 @@
 import React, { useRef, useEffect } from 'react';
 import { BoardStyle, SquareStyle } from './Board.style';
 import Pieces from '../Pieces';
+import { fileNumToChar } from '../../helpers';
 
 interface Square {
   isLight: boolean;
   coord: string;
 }
-
-const fileNumToChar = (num: number): string => String.fromCharCode(96 + num);
 
 // Initiate squares
 const squares: Square[] = [];
