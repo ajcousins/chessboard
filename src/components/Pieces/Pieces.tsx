@@ -13,7 +13,7 @@ import WhiteQueen from '../../piece_svgs/WhiteQueen';
 import BlackKing from '../../piece_svgs/BlackKing';
 import WhiteKing from '../../piece_svgs/WhiteKing';
 
-const BOARD_SIZE = 30;
+const BOARD_SIZE = 60;
 
 const Overlay = styled.div`
   // background-color: #ff000033;

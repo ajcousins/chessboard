@@ -1,7 +1,7 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { BoardStyle, SquareStyle } from './Board.style';
 import Pieces from '../Pieces';
-import { fileNumToChar } from '../../helpers';
+import { fileNumToChar, fenToArr } from '../../helpers';
 
 interface Square {
   isLight: boolean;
@@ -20,12 +20,21 @@ for (let rank = 8; rank > 0; rank--) {
 }
 
 export default function Board() {
+  const [piecePlacement, setPiecePlacement] = useState<Array<Piece>>([]);
   const sqRefs = useRef<Array<HTMLDivElement | null>>([]);
 
   useEffect(() => {
     // Don't actually need this anymore for piece placement. But could come in handy later.
     console.log('sqRefs:', sqRefs);
   });
+
+  useEffect(() => {
+    // On first render. Load starting poistion.
+    setPiecePlacement(
+      fenToArr('rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1')
+    );
+    console.log('piecePlacement:', piecePlacement);
+  }, []);
 
   return (
     <BoardStyle>

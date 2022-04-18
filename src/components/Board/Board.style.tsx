@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const BOARD_SIZE = 30;
+const BOARD_SIZE = 60;
 const LIGHT_SQUARE = '#ebebd0';
 const DARK_SQUARE = '#779455';
 

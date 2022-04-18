@@ -1,14 +1,14 @@
 import { fileNumToChar } from '.';
 
-export default function fenToArr(fen: string): Piece[] | undefined {
+export default function fenToArr(fen: string): Piece[] {
   const fenArr = fen.split(' ');
 
   // FEN string should contain 6 fields
-  if (fenArr.length !== 6) return undefined;
+  if (fenArr.length !== 6) return [];
 
   // piece placement field should contain 8 sections
   const piecePlacement = fenArr[0].split('/');
-  if (piecePlacement.length !== 8) return undefined;
+  if (piecePlacement.length !== 8) return [];
 
   // Piece array to build and return back
   const pieceArr: Piece[] = [];

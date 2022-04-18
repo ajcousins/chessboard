@@ -3,11 +3,11 @@ import { placement_1, placement_2, placement_3 } from './test_data/fenToArr'
 
 describe('fenToArr', () => {
   it('should return undefined for incorrect fen format', () => {
-    expect(fenToArr('test string')).toBeUndefined();
+    expect(fenToArr('test string')).toMatchObject([]);
   });
 
   it('should return undefined for incorrect piecePlacement string', () => {
-    expect(fenToArr('r7/p7/8/8/8/7P/7R w KQkq - 0 1')).toBeUndefined();
+    expect(fenToArr('r7/p7/8/8/8/7P/7R w KQkq - 0 1')).toMatchObject([]);
   });
 
   it('should return object for correct piecePlacement string', () => {
