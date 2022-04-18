@@ -29,12 +29,13 @@ export default function Board() {
   });
 
   useEffect(() => {
-    // On first render. Load starting poistion.
+    // On first render. Load starting position.
     setPiecePlacement(
-      fenToArr('rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1')
+      // fenToArr('rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1')
+      fenToArr('6k1/3q2p1/p2bp2p/3p1r2/1p1Pp3/3bQ1PP/PP1B1rB1/1N2R1RK w KQkq - 0 1')
     );
     console.log('piecePlacement:', piecePlacement);
-  }, []);
+  }, [piecePlacement]);
 
   return (
     <BoardStyle>
@@ -45,7 +46,7 @@ export default function Board() {
           ref={(el: any) => (sqRefs.current[i] = el)}
         ></SquareStyle>
       ))}
-      <Pieces />
+      <Pieces placement={piecePlacement} />
     </BoardStyle>
   );
 }
